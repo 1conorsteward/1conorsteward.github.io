@@ -6,7 +6,7 @@
     <meta name="description" content="My E-Portfolio">
     <meta name="author" content="Conor Steward">
     <title>Conor Steward | Portfolio</title>
-    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,25 +19,36 @@
     <main>
         <section id="cards">
             <div class="cards-grid">
-                <!-- First card: About Me -->
+                <!-- First card: About Me (if applicable) -->
                 <div class="card">
-                    <p>Howdy! I'm Conor. I am a data analyst and software developer with a Bachelor’s degree in Computer Science and a specialization in Data Analytics...</p>
+                    <div class="flip-card-inner">
+                        <!-- Front of the card: Image -->
+                        <div class="flip-card-front">
+                            <img src="project1.png" alt="Project 1 Screenshot">
+                        </div>
+                        <!-- Back of the card: Description -->
+                        <div class="flip-card-back">
+                            <h3>Appointment Now</h3>
+                            <p>Appointment Now is an Android-based application designed to help users manage appointments effectively...</p>
+                            <a href="https://github.com/1conorsteward/Appointment_Now.git" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Second card: Appointment Now -->
+                <!-- Second card: Project 2 -->
                 <div class="card">
-                    <img src="project1.png" alt="Project 1 Screenshot">
-                    <h3>Appointment Now</h3>
-                    <p>Appointment Now is an Android-based application designed to help users manage appointments effectively...</p>
-                    <a href="https://github.com/1conorsteward/Appointment_Now.git" target="_blank">View on GitHub</a>
-                </div>
-
-                <!-- Third card: Investment Calculator -->
-                <div class="card">
-                    <img src="project2.png" alt="Project 2 Screenshot">
-                    <h3>Investment Calculator</h3>
-                    <p>Brief description of your project and technologies used.</p>
-                    <a href="https://github.com/1conorsteward/investmentCalculator.git" target="_blank">View on GitHub</a>
+                    <div class="flip-card-inner">
+                        <!-- Front of the card: Image -->
+                        <div class="flip-card-front">
+                            <img src="project2.png" alt="Project 2 Screenshot">
+                        </div>
+                        <!-- Back of the card: Description -->
+                        <div class="flip-card-back">
+                            <h3>Investment Calculator</h3>
+                            <p>Brief description of your project and technologies used.</p>
+                            <a href="https://github.com/1conorsteward/investmentCalculator.git" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

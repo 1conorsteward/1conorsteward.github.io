@@ -1,5 +1,12 @@
-const messages = ["partner", "friends", "hiring manager"];
+const messages = ["partner!", "friends!", "hiring manager!"];
 let messageIndex = 0;
+
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function() {
+        this.classList.toggle('clicked');
+    });
+});
+
 
 const rotateMessage = () => {
     const rotatingMessageElement = document.querySelector('.rotating-message');
