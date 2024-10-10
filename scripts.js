@@ -1,11 +1,20 @@
-// JavaScript to rotate messages
 const messages = ["partner", "friends", "hiring manager"];
 let messageIndex = 0;
 
 const rotateMessage = () => {
     const rotatingMessageElement = document.querySelector('.rotating-message');
-    messageIndex = (messageIndex + 1) % messages.length;
-    rotatingMessageElement.textContent = messages[messageIndex];
+
+    // Fade out the current message
+    rotatingMessageElement.style.opacity = 0;
+
+    // After the fade-out, change the message and fade it back in
+    setTimeout(() => {
+        messageIndex = (messageIndex + 1) % messages.length;
+        rotatingMessageElement.textContent = messages[messageIndex];
+
+        // Fade in the new message
+        rotatingMessageElement.style.opacity = 1;
+    }, 500); // Time for fade-out (500ms)
 };
 
 // Change the message every 3 seconds
