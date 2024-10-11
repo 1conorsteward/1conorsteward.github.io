@@ -37,7 +37,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: left;
-    min-height: 150px; /* Ensures consistent height */
+    min-height: 150px;
 }
 
 .flip-card-inner {
