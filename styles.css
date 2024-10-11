@@ -30,6 +30,7 @@ body {
     width: 300px;
     height: 500px;
     margin: 20px;
+    margin-bottom: 10px;
     background-color: rgb(237, 196, 141);
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -105,7 +106,7 @@ body {
 .cards-grid {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     margin-top: 150px;
 }
 
