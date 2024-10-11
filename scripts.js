@@ -1,4 +1,4 @@
-const messages = ["partner!", "friends!", "hiring manager!"];
+const messages = ["partner", "friends", "hiring manager"];
 let messageIndex = 0;
 
 document.querySelectorAll('.card').forEach(card => {
