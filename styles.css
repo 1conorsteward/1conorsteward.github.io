@@ -77,13 +77,14 @@ body {
 
 /* Back of the card: Description */
 .flip-card-back {
-    background-color: #79acd6;
+    background-color: #95caf5;
     color: white;
     transform: rotateY(180deg);
+    text-align: left;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
 }
 
 .flip-card-back h3 {
@@ -91,7 +92,7 @@ body {
 }
 
 .flip-card-back a {
-    color: #FFD700;
+    color: #bb8e34;
     font-weight: bold;
     margin-top: 15px;
 }
