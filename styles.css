@@ -28,7 +28,7 @@ body {
 .card {
     perspective: 1000px;
     width: 280px;
-    height: 450px;
+    height: 5500px;
     margin: 10px;
     background-color: rgb(237, 196, 141);
     border: 1px solid #ddd;
@@ -126,3 +126,16 @@ footer a {
 footer a:hover {
     color: #4CAF50;
 }
+ /* Media alterations for different screen sizes*/
+ @media (max-width: 1200px) {
+    .cards-grid {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
