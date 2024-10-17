@@ -27,7 +27,7 @@ body {
 /* Card flip container */
 .card {
     perspective: 1000px;
-    width: 280px;
+    width: 320px;
     height: 5500px;
     margin: 10px;
     background-color: rgb(237, 196, 141);
