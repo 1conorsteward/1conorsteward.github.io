@@ -28,7 +28,7 @@ body {
 .card {
     perspective: 1000px;
     width: 320px;
-    height: 550px;
+    height: 600px;
     margin: 10px;
     background-color: rgb(237, 196, 141);
     border: 1px solid #ddd;
