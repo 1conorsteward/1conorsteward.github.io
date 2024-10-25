@@ -127,6 +127,7 @@ body {
 /* Unique styles for each card back */
 /* First card: different background */
 .card-back-1 {
+    background-color: rgba(35, 70, 99, 0.7);
     background-image: url('assets/AceOfHearts.jpeg');
     background-size: cover;
     background-position: center;
@@ -134,6 +135,7 @@ body {
 
 /* Second card: different background */
 .card-back-2 {
+    background-color: rgba(35, 70, 99, 0.7);
     background-image: url('assets/AceOfClubs.jpeg');
     background-size: cover;
     background-position: center;
@@ -141,6 +143,7 @@ body {
 
 /* Third card: different background */
 .card-back-3 {
+    background-color: rgba(35, 70, 99, 0.7);
     background-image: url('assets/AceOfDiamons.jpeg');
     background-size: cover;
     background-position: center;
@@ -148,6 +151,7 @@ body {
 
 /* Fourth card: different background */
 .card-back-4 {
+    background-color: rgba(35, 70, 99, 0.7);
     background-image: url('assets/AceOfSpades.jpeg');
     background-size: cover;
     background-position: center;
