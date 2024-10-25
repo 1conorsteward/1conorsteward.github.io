@@ -1,7 +1,7 @@
 /*******************************************************
  * Script: Portfolio Interaction
- * Author: [Your Name]
- * Date: [Date]
+ * Author: Conor Steward
+ * Date: 10/25/24
  * Version: 1.0
  * Purpose: This script handles the card flip animation and rotating 
  * "Howdy" message functionality on the portfolio page.
