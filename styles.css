@@ -1,4 +1,14 @@
-/* Global Styles */
+/*******************************************************
+ * Stylesheet: Portfolio
+ * Author: Conor Steward
+ * Date: 10/25/24
+ * Version: 1.0
+ * Purpose: Styling for portfolio project
+ * Description: This file contains global styles, card flip animations,
+ * grid layout for the cards, and media queries for responsiveness.
+ *******************************************************/
+
+/* === Global Styles === */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,62 +18,70 @@ body {
     line-height: 1.6;
 }
 
-/* Howdy message at the top, no overlap */
+/* === Howdy Message Styles === */
+/* Positioning for the Howdy message */
 .howdy-message {
-    position: static;
+    position: static; /* No overlap */
     top: 10px;
     left: 10px;
     font-size: 1.5em;
-    z-index: 1000; /* Ensure the Howdy message stays on top */
+    z-index: 1000; /* Ensures the Howdy message stays on top */
     color: #2f4f4f; /* Dark Slate Gray */
 }
 
+/* Rotating effect for the message */
 .rotating-message {
     color: #843b07; /* Brown */
     transition: opacity 0.5s ease-in-out; /* Fade effect */
-    opacity: 1; /* Default to visible */
+    opacity: 1; /* Default state: visible */
 }
 
-/* Card flip container */
+/* === Card Flip Styles === */
+/* Outer container for the card flip */
 .card {
-    perspective: 1000px;
+    perspective: 1000px; /* Enables 3D effect for flipping */
     width: 320px;
     height: 600px;
     margin: 10px;
-    background-color: rgb(237, 196, 141);
+    background-color: rgb(237, 196, 141); /* Soft tan */
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 15px;
     text-align: left;
-  }
+}
 
+/* Inner structure for flipping the card */
 .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+    transition: transform 0.8s; /* Smooth flipping transition */
+    transform-style: preserve-3d; /* 3D effect */
 }
 
+/* Flip effect on hover or click */
 .card:hover .flip-card-inner, .card.clicked .flip-card-inner {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Flips the card */
 }
 
-/* Front and back of the card */
+/* === Front and Back of the Card === */
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
+    backface-visibility: hidden; /* Hides the back when flipped */
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Same shadow on both sides */
 }
 
-/* Front of the card: Image */
+/* === Front of the Card (Image) === */
 .flip-card-front {
-    background-color: #fff;
+    background-image: url('path/to/PlayingCardBack.png');
+    background-size: cover; /* Ensures the image covers the entire front */
+    background-position: center;
+    border-radius: 8px; /* Keeps the rounded corners */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,71 +89,113 @@ body {
 
 .flip-card-front img {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 8px; /* Rounded corners */
 }
 
-/* Back of the card: Description */
+/* === Back of the Card (Description) === */
+/* Shared styles for all card backs */
 .flip-card-back {
-    background-color: #95caf5;
     color: white;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Pre-flip state */
     text-align: left;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* Centers content vertically */
+    backface-visibility: hidden;
+    border-radius: 8px;
 }
 
+/* Back card title styling */
 .flip-card-back h3 {
     margin-top: 10px;
 }
 
+/* Link styling on the back of the card */
 .flip-card-back a {
-    color: #bb8e34;
+    color: #bb8e34; /* Gold color */
     font-weight: bold;
     margin-top: 15px;
 }
 
+/* Hover effect for the link */
 .flip-card-back a:hover {
     text-decoration: underline;
 }
 
-/* Grid layout for cards */
+/* Unique styles for each card back */
+/* First card: different background */
+.card-back-1 {
+    background-image: url('assets/AceOfHearts.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Second card: different background */
+.card-back-2 {
+    background-image: url('assets/AceOfClubs.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Third card: different background */
+.card-back-3 {
+    background-image: url('assets/AceOfDiamons.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fourth card: different background */
+.card-back-4 {
+    background-image: url('assets/AceOfSpades.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* === Cards Grid Layout === */
+/* Container for arranging cards in a grid layout */
 .cards-grid {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20px; /* Spacing between cards */
     margin: 50px auto;
-    max-width: 1200px;
+    max-width: 1200px; /* Max width for the grid */
     padding: 0 20px;
-  }
+}
 
-/* Footer Styles */
+/* === Footer Styles === */
+/* Basic footer styling */
 footer {
-    background-color: #333;
+    background-color: #333; /* Dark background */
     color: white;
     padding: 1em;
     text-align: center;
 }
 
+/* Footer link styling */
 footer a {
-    color: white;
+    color: white; /* White links */
     margin: 0 10px;
 }
 
+/* Hover effect for footer links */
 footer a:hover {
-    color: #4CAF50;
+    color: #4CAF50; /* Light green on hover */
 }
- /* Media alterations for different screen sizes*/
- @media (max-width: 1200px) {
+
+/* === Media Queries for Responsiveness === */
+/* Adjust grid layout on smaller screens */
+@media (max-width: 1200px) {
     .cards-grid {
-      flex-wrap: wrap;
+        flex-wrap: wrap; /* Cards wrap on smaller screens */
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+/* Adjust card size on medium screens */
+@media (max-width: 768px) {
     .card {
-      width: 100%;
-      max-width: 350px;
+        width: 100%;
+        max-width: 350px; /* Maximum width for the cards */
     }
-  }
+}
