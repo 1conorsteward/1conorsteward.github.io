@@ -13,7 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #D2B48C; /* Tan background */
+    background: href="assets/Wall.jpeg"; /* Tan background */
     color: #333;
     line-height: 1.6;
 }
@@ -40,8 +40,8 @@ body {
 /* Outer container for the card flip */
 .card {
     perspective: 1000px; /* Enables 3D effect for flipping */
-    width: 320px;
-    height: 600px;
+    width: 330px;
+    height: 660px;
     margin: 10px;
     background-color: rgb(237, 196, 141); /* Soft tan */
     border: 1px solid #ddd;
@@ -78,13 +78,15 @@ body {
 
 /* === Front of the Card (Image) === */
 .flip-card-front {
-    background-image: url('assets/PlayingCardBack.jpg');
-    background-size: cover; /* Ensures the image covers the entire front */
-    background-position: center;
-    border-radius: 8px; /* Keeps the rounded corners */
+    color: rgb(253, 145, 109);
+    transform: rotateY(180deg); /* Pre-flip state */
+    text-align: left;
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    backface-visibility: hidden;
+    border-radius: 8px;
 }
 
 .flip-card-front img {
@@ -95,8 +97,7 @@ body {
 /* === Back of the Card (Description) === */
 /* Shared styles for all card backs */
 .flip-card-back {
-    background-color: rgba(35, 70, 99, 0.7);
-    color: white;
+    color: rgb(253, 145, 109);
     transform: rotateY(180deg); /* Pre-flip state */
     text-align: left;
     padding: 20px;
@@ -124,35 +125,31 @@ body {
     text-decoration: underline;
 }
 
-/* Unique styles for each card back */
+/* Unique styles for each card front */
 /* First card: different background */
-.card-back-1 {
-    background-color: rgba(35, 70, 99, 0.7);
-    background-image: url('assets/AceOfHearts.jpeg');
+.card-front-1 {
+    background-image: url('assets/Scenic1.png');
     background-size: cover;
     background-position: center;
 }
 
 /* Second card: different background */
-.card-back-2 {
-    background-color: rgba(35, 70, 99, 0.7);
-    background-image: url('assets/AceOfClubs.jpeg');
+.card-front-2 {
+    background-image: url('assets/Scenic2.png');
     background-size: cover;
     background-position: center;
 }
 
 /* Third card: different background */
-.card-back-3 {
-    background-color: rgba(35, 70, 99, 0.7);
-    background-image: url('assets/AceOfDiamons.jpeg');
+.card-front-3 {
+    background-image: url('assets/Scenic3.png');
     background-size: cover;
     background-position: center;
 }
 
 /* Fourth card: different background */
-.card-back-4 {
-    background-color: rgba(35, 70, 99, 0.7);
-    background-image: url('assets/AceOfSpades.jpeg');
+.card-front-4 {
+    background-image: url('assets/Scenic4.png');
     background-size: cover;
     background-position: center;
 }
