@@ -2,7 +2,7 @@
  * Stylesheet: Portfolio
  * Author: Conor Steward
  * Date: 10/25/24
- * Version: 1.0
+ * Version: 2.0
  * Purpose: Styling for portfolio project
  * Description: This file contains global styles, card flip animations,
  * grid layout for the cards, and media queries for responsiveness.
@@ -13,8 +13,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: href="assets/Wall.jpeg"; /* Tan background */
-    color: #333;
+    background: url("assets/Wall.jpeg");
+    color: #ece3e3;
     line-height: 1.6;
 }
 
