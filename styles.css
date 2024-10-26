@@ -102,7 +102,7 @@ body {
 /* === Back of the Card (Solid Color) === */
 .flip-card-back {
     background-color: #95caf5; /* Light blue background for all back sides */
-    color: rgb(253, 145, 109);
+    color: rgb(94, 45, 29);
     transform: rotateY(180deg); /* Pre-flip state */
     text-align: left;
     padding: 20px;
@@ -118,7 +118,7 @@ body {
 
 /* Link styling on the back of the card */
 .flip-card-back a {
-    color: #bb8e34; /* Gold color */
+    color: #372b12;
     font-weight: bold;
     margin-top: 15px;
 }
