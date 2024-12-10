@@ -1,7 +1,7 @@
 /*******************************************************
  * Stylesheet: Portfolio
  * Author: Conor Steward
- * Date: 10/25/24
+ * Date: 12/10/24
  * Version: 2.0
  * Purpose: Styling for portfolio project
  * Description: This file contains global styles, card flip animations,
@@ -184,15 +184,12 @@ body {
 /* === Footer Styles === */
 /* Basic footer styling */
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%; /* Ensure the footer spans the width of the viewport */
     background-color: #333; /* Dark background */
     color: white;
     padding: 1em;
     text-align: center;
+    width: 100%; /* Ensures it spans the full width */
 }
-
 
 /* Footer link styling */
 footer a {
