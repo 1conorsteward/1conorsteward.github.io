@@ -184,11 +184,15 @@ body {
 /* === Footer Styles === */
 /* Basic footer styling */
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Ensure the footer spans the width of the viewport */
     background-color: #333; /* Dark background */
     color: white;
     padding: 1em;
     text-align: center;
 }
+
 
 /* Footer link styling */
 footer a {
